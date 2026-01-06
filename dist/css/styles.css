@@ -11500,3 +11500,23 @@ header.masthead .masthead-heading {
 .nav-link:hover {
   color: #164a72 !important;
 }
+
+  /* =====================================================
+   NAVBAR – FORZAR COLOR AZUL DEFINITIVO
+   ===================================================== */
+
+#mainNav {
+  --bs-link-color: #ffffff;
+  --bs-link-hover-color: #164a72;
+}
+
+#mainNav .nav-link {
+  color: var(--bs-link-color) !important;
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus,
+#mainNav .nav-link.active {
+  color: var(--bs-link-hover-color) !important;
+}
+
