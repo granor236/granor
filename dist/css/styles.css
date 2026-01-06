@@ -11520,3 +11520,33 @@ header.masthead .masthead-heading {
   color: var(--bs-link-hover-color) !important;
 }
 
+  /* =====================================================
+   FIX FINAL – AGENCY USA .text-primary EN EL NAV
+   ===================================================== */
+
+/* Normal */
+#mainNav .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+/* Hover + Active (aunque tenga text-primary) */
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link.active,
+#mainNav .navbar-nav .nav-link.text-primary {
+  color: #164a72 !important;
+}
+
+/* Cuando el nav se achica (desktop) */
+#mainNav.navbar-shrink .navbar-nav .nav-link,
+#mainNav.navbar-shrink .navbar-nav .nav-link.text-primary {
+  color: #ffffff !important;
+}
+
+#mainNav.navbar-shrink .navbar-nav .nav-link:hover,
+#mainNav.navbar-shrink .navbar-nav .nav-link.active,
+#mainNav.navbar-shrink .navbar-nav .nav-link.text-primary {
+  color: #164a72 !important;
+}
+
+
+  
