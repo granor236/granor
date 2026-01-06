@@ -11384,13 +11384,6 @@ header.masthead .masthead-heading {
   padding-right: 0;
 }
 
-  
-/* Override SOLO para los círculos de Font Awesome */
-.fa-stack .fa-circle {
-  color: #164a72 !important;
-}
-
-
 /* ============================= */
 /* TIMELINE MOBILE FIX CORRECTO */
 /* (SIN LINEA EN MOBILE)        */
