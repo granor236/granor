@@ -11437,3 +11437,7 @@ header.masthead .masthead-heading {
     line-height: 1.4;
   }
 }
+
+#formadetrabajar .fa-stack .fa-circle {
+  color: #164a72 !important;
+}
