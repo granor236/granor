@@ -21,6 +21,25 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <style>
+  /* FIX DEFINITIVO NAVBAR AGENCY */
+  #mainNav {
+    --bs-navbar-color: #ffffff;
+    --bs-navbar-hover-color: #164a72;
+    --bs-navbar-active-color: #164a72;
+  }
+
+  #mainNav .nav-link {
+    color: var(--bs-navbar-color);
+  }
+
+  #mainNav .nav-link:hover,
+  #mainNav .nav-link:focus,
+  #mainNav .nav-link.active {
+    color: var(--bs-navbar-active-color);
+  }
+</style>
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="dist/css/styles.css" rel="stylesheet" />
     </head>
