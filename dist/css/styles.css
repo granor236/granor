@@ -11449,33 +11449,41 @@ header.masthead .masthead-heading {
 }
 
 /* =====================================================
-   FIX DEFINITIVO NAVBAR - HOVER Y ACTIVE EN AZUL
+   OVERRIDE TOTAL NAVBAR AGENCY + SCROLLSPY
    ===================================================== */
 
-/* Sobrescribimos variables oficiales de Bootstrap */
-#mainNav {
-  --bs-navbar-color: #ffffff;
-  --bs-navbar-hover-color: #164a72;
-  --bs-navbar-active-color: #164a72;
+/* Estado normal */
+#mainNav .navbar-nav .nav-link {
+  color: #ffffff !important;
 }
 
-/* Fuerza estados por compatibilidad total */
-#mainNav .navbar-nav .nav-link:hover,
-#mainNav .navbar-nav .nav-link:focus,
+/* Hover */
+#mainNav .navbar-nav .nav-link:hover {
+  color: #164a72 !important;
+}
+
+/* ACTIVO REAL (Agency + Bootstrap) */
 #mainNav .navbar-nav .nav-link.active,
-#mainNav .navbar-nav .show > .nav-link {
+#mainNav .navbar-nav .nav-link.show,
+#mainNav.navbar-shrink .navbar-nav .nav-link.active,
+#mainNav.navbar-shrink .navbar-nav .nav-link:hover {
   color: #164a72 !important;
 }
 
 /* Mobile */
 @media (max-width: 991.98px) {
-  #mainNav .navbar-nav .nav-link {
-    color: #ffffff;
+  #mainNav .navbar-nav .nav-link,
+  #mainNav.navbar-shrink .navbar-nav .nav-link {
+    color: #ffffff !important;
   }
 
   #mainNav .navbar-nav .nav-link:hover,
-  #mainNav .navbar-nav .nav-link:focus,
   #mainNav .navbar-nav .nav-link.active {
     color: #164a72 !important;
   }
+}
+
+/* Matar color primario del theme en el nav */
+#mainNav .navbar-nav .nav-link.active {
+  background-color: transparent !important;
 }
