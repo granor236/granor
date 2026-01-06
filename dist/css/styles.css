@@ -8032,10 +8032,6 @@ textarea.form-control-lg {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
-.fa-stack .fa-circle {
-  color: #164a72;
-}
-
 .text-secondary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
@@ -11440,4 +11436,9 @@ header.masthead .masthead-heading {
     font-size: 0.95rem;
     line-height: 1.4;
   }
+}
+
+/* Override SOLO para los círculos de Font Awesome */
+.fa-stack .fa-circle {
+  color: #164a72 !important;
 }
