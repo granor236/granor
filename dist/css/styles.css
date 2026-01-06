@@ -11487,3 +11487,16 @@ header.masthead .masthead-heading {
 #mainNav .navbar-nav .nav-link.active {
   background-color: transparent !important;
 }
+
+/* =====================================================
+   FIX DESKTOP NAVBAR ACTIVE (AGENCY ESPECÍFICO)
+   ===================================================== */
+
+#mainNav.navbar-shrink .navbar-nav
+.nav-item
+.nav-link.active,
+#mainNav.navbar-shrink .navbar-nav
+.nav-item
+.nav-link:hover {
+  color: #164a72 !important;
+}
