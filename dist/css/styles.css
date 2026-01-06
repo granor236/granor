@@ -11448,19 +11448,31 @@ header.masthead .masthead-heading {
   color: #164a72 !important;
 }
 
+  
 /* =====================================================
-   FIX REAL AGENCY – DESKTOP + MOBILE
+   FIX DEFINITIVO NAVBAR – AGENCY v7 (TU VARIANTE)
    ===================================================== */
 
-/* Desktop: navbar-shrink (Agency) */
-#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link,
-#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active,
-#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+/* Color normal */
+#mainNav .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+/* Hover + activo (desktop y mobile) */
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link:focus,
+#mainNav .navbar-nav .nav-link.active {
   color: #164a72 !important;
 }
 
-/* Mobile */
-@media (max-width: 991.98px) {
-  #mainNav .navbar-nav .nav-link,
-  #mainNav .navbar-nav .nav-link.active,
-  #mainNav .navbar-
+/* Cuando el navbar se achica (desktop) */
+#mainNav.navbar-shrink .navbar-nav .nav-link,
+#mainNav.navbar-shrink .navbar-nav .nav-link.active,
+#mainNav.navbar-shrink .navbar-nav .nav-link:hover {
+  color: #164a72 !important;
+}
+
+/* Evitar que <a> global meta el primary */
+#mainNav a {
+  color: inherit !important;
+}
