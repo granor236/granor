@@ -11448,32 +11448,34 @@ header.masthead .masthead-heading {
   color: #164a72 !important;
 }
 
-  /* ===============================
-   NAVBAR - COLOR AZUL PERSONALIZADO
-   =============================== */
+/* =====================================================
+   FIX DEFINITIVO NAVBAR - HOVER Y ACTIVE EN AZUL
+   ===================================================== */
 
-/* Color normal del texto */
-#mainNav .navbar-nav .nav-link {
-  color: #ffffff;
-  transition: color 0.2s ease-in-out;
+/* Sobrescribimos variables oficiales de Bootstrap */
+#mainNav {
+  --bs-navbar-color: #ffffff;
+  --bs-navbar-hover-color: #164a72;
+  --bs-navbar-active-color: #164a72;
 }
 
-/* Hover (desktop) */
-#mainNav .navbar-nav .nav-link:hover {
+/* Fuerza estados por compatibilidad total */
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link:focus,
+#mainNav .navbar-nav .nav-link.active,
+#mainNav .navbar-nav .show > .nav-link {
   color: #164a72 !important;
 }
 
-/* Link activo (cuando estás en esa sección) */
-#mainNav .navbar-nav .nav-link.active {
-  color: #164a72 !important;
-}
-
-/* Mobile: al tocar el link */
+/* Mobile */
 @media (max-width: 991.98px) {
+  #mainNav .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+
   #mainNav .navbar-nav .nav-link:hover,
   #mainNav .navbar-nav .nav-link:focus,
   #mainNav .navbar-nav .nav-link.active {
     color: #164a72 !important;
   }
 }
-
