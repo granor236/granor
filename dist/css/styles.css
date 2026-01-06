@@ -11352,14 +11352,19 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /* Forzar fondo gris al hacer scroll */
 #mainNav.navbar-shrink {
-    background-color: #212529 !important;
+    background-color: #a1a7ad !important;
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
 }
 
+#formadetrabajar .fa-stack .fa-circle {
+  color: #164a72 !important;
+}
+
+
 /* Opcional: fondo gris apenas carga (si quieres siempre gris) */
 #mainNav {
-    background-color: #212529;
+    background-color: #a1a7ad;
 }
 /* Ajuste SOLO del título principal del masthead */
 header.masthead .masthead-heading {
