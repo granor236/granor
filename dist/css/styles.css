@@ -11450,3 +11450,32 @@ header.masthead .masthead-heading {
 #formadetrabajar .fa-stack .fa-circle {
   color: #164a72 !important;
 }
+
+/* Botón primario – fuerza hover/active en TODOS los breakpoints */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #519d46 !important;
+  border-color: #519d46 !important;
+}
+
+@media (min-width: 992px) {
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active {
+    background-color: #519d46 !important;
+    border-color: #519d46 !important;
+  }
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #164a72 !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link:hover,
+  #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #164a72 !important;
+  }
+}
