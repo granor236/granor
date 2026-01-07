@@ -10980,12 +10980,23 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
-
-  .btn-primary:hover {
-  background-color: #d94a10 !important;
-  border-color: #d94a10 !important;
+  
+/* BOTONES PRIMARY - COLORES DEFINITIVOS */
+.btn-primary {
+  background-color: #164a72 !important;
+  border-color: #164a72 !important;
+  transition: all 0.3s ease;
 }
 
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #519d46 !important;
+  border-color: #519d46 !important;
+  transform: scale(1.05);
+}
+  
 #portfolio .btn-primary {
   max-width: 400px;
   margin: 0 auto;
@@ -11356,6 +11367,24 @@ section#contact form#contactForm :-ms-input-placeholder {
     background-color: #272829 !important;
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
+}
+
+/* CONTROL DE COLORES DEFINITIVO - NAVBAR */
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus,
+#mainNav .nav-link.active {
+  color: #164a72 !important;
+}
+
+#mainNav.navbar-shrink .nav-link {
+  color: #ffffff !important;
+}
+
+#mainNav.navbar-shrink .nav-link:hover,
+#mainNav.navbar-shrink .nav-link:focus,
+#mainNav.navbar-shrink .nav-link.active {
+  color: #164a72 !important;
 }
 
 #formadetrabajar .fa-stack .fa-circle {
